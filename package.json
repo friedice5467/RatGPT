@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "RatGPT project",
   "scripts": {
-    "heroku-postbuild": "cd RatGPT && npm install && npm run build"
+    "heroku-postbuild": "cd RatGPT/ClientApp && npm install && npm run build"
   },
   "engines": {
     "node": "18.x"
