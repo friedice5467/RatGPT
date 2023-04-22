@@ -1,0 +1,11 @@
+{
+  "name": "ratgpt",
+  "version": "1.0.0",
+  "description": "RatGPT project",
+  "scripts": {
+    "heroku-postbuild": "cd RatGPT && npm install && npm run heroku-postbuild"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
