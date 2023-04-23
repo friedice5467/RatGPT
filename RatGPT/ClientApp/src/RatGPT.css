@@ -11,6 +11,7 @@
   
   .ratgpt-container {
     width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,8 +134,8 @@
   .message-content {
     display: flex;
     align-items: center;
-    padding-left: calc(90vh - 26rem);
-    padding-right: calc(90vh - 30rem);
+    padding-left: calc(90vh - 30rem);
+    padding-right: calc(90vh - 36rem);
   }
   
   .message-content img {
@@ -195,4 +196,93 @@
     background: #7F8C8D;
   }
   
-  
+  /* Add at the end of your existing CSS file */
+
+/* For mobile devices with a screen width of up to 480px */
+@media only screen and (max-width: 480px) {
+  .page-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .ratgpt-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .input-wrapper {
+    width: 80vw;
+  }
+
+  .sidebar-button button {
+    font-size: 14px;
+  }
+
+  .chat-message {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .message-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* For tablets with a screen width of up to 768px */
+@media only screen and (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .ratgpt-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .input-wrapper {
+    width: 70vw;
+  }
+
+  .sidebar-button button {
+    font-size: 16px;
+  }
+
+  .chat-message {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .message-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* For laptops with a screen width of up to 1024px */
+@media only screen and (max-width: 1024px) {
+  .input-wrapper {
+    width: 60vw;
+  }
+
+  .ratgpt-container {
+    height: 100%;
+  }
+
+  .chat-message {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .message-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
